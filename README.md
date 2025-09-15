@@ -11,5 +11,7 @@ Proof of concept for CPSC362 project.
 1. Open a terminal (Command Prompt on Windows, or any CLI on Mac/Linux).
 2. Clone this repository:
    ```bash
-   git clone <repo-url>
-   cd <repo-name>
+   a. git clone <repo-url>
+   b. cd <repo-name>
+   c. npm install
+   d. npm run dev
