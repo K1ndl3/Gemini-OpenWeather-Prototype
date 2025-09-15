@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "./App.css"
 import "./Temperature/Temp.jsx"
 import { GoogleGenAI } from "@google/genai";
@@ -9,6 +9,10 @@ function App() {
   const [genResponse, setGenResponse] = useState("")
   const [userInput, setUserInput] = useState("");
   const ai = new GoogleGenAI({ apiKey: "AIzaSyAR2dmyNJQfju5SaccjwYQyeFTlBAsRmw4" });
+
+  useEffect(()=> {
+    generateResponse()
+  }, [tempDataContext])
 
   async function main(userTextInput) {
     const context = "tell me what to wear based on the json context below. Limit response to 50 words." + JSON.stringify(tempDataContext)
