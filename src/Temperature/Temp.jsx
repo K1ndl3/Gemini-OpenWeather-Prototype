@@ -4,7 +4,7 @@ function Temp(props) {
     const setTempDataContext = props.setTempDataContext;
     const [cityName, setCityName] = useState("");
     async function getTemp(city) {
-        const apiKey = "b5acfd8cb7273080bea594477147cf7c"
+        const apiKey = import.meta.env.VITE_OPEN_WEATHERKEY
         const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
         try{
             const response = await fetch(URL);
