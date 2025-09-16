@@ -15,3 +15,6 @@ Proof of concept for CPSC362 project.
    b. cd <repo-name>
    c. npm install
    d. npm run dev
+### API keys generation
+1. create .env file in root directory in repo
+2. ask me for the api keys
