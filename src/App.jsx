@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div className="app-container">
-        <Temp setTempDataContext={setTempDataContext}></Temp>
+        <Temp setTempDataContext={setTempDataContext} tempDataContext={tempDataContext}></Temp>
         <GenAI tempDataContext={tempDataContext}></GenAI>
       </div>
 
